@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Date Picker</title>
+</head>
+<body>
+  
+  <h2>Date Picker</h2>
+  
+  <ul>
+    <li>Select a month</li>
+    <li>Select a year</li>
+    <li>Click on the date</li>
+  </ul>
+
+  <select name="month" id="month-picker" onchange="updateCalendar()"></select>
+  <select name="year" id="year-picker" onchange="updateCalendar()"></select>
+
+  <table>
+    <thead>
+      <tr>
+        <td>Sun</td>
+        <td>Mon</td>
+        <td>Tue</td>
+        <td>Wed</td>
+        <td>Thu</td>
+        <td>Fri</td>
+        <td>Sat</td>
+      </tr>
+    </thead>
+    <tbody id="dates"></tbody>
+  </table>
+
+  <h3>The date selected is:</h3>
+  <h1 id="date"></h1>
+
+  <script src="./date-picker.js"></script>
+</body>
+</html>
